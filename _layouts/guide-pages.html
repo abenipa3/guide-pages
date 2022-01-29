@@ -1,0 +1,104 @@
+---
+layout: default
+---
+
+<body>
+  
+  <div class="bg-color">
+    
+    <div class="page-content-container-grid">   
+      <div class="sticky-nav-content-container">
+        <a class=anchor></a>
+        <nav id="sticky-nav" class="sticky-nav stick-it">
+          {% include toc.html html=content %}
+        </nav>
+        
+        <div class="sticky-nav-spacer-div"> </div>
+
+      </div>
+    
+
+      <div class="card-primary page-card--guide page-card--overview">
+        <!-- This page card contains the guide's overview and direct links -->
+        <h1 class="guide-title">{{ page.title }}</h1>
+        {{ page.overview | markdownify }}
+        
+        <div class="guide-links">
+          {% if page.sections %}
+          <h2>In This Guide</h2>
+          <ul>
+            {% for section in page.sections %}
+            <li><a href="{{ section.href }}"> {{ section.title }} </a><br>
+              {% if section.subsection[0] %}
+              <ul style="padding-left: 20px;">
+                {% for subsection in section.subsection %}
+                <li><a href="{{ subsection.href }}">{{ subsection.title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+    
+    <div class="card-primary page-card--guide">
+      
+      {{content}}
+    
+    </div>
+
+    <div class="card-primary page-card--guide page-card--authors">
+      
+      <h1>Guide Authors</h1>
+      <p>Peer-created guides are an important part of Hack for LA's Culture.  They are created by our Volunteer Members based on effective processes developed on our projects.</p>
+      <p>This guide was created and contributed to by:</p>
+      
+      <p><b>Help us make this guide better:</b></p>
+
+      
+      <p>If you are a member of the Hack for LA community you can post any comments directly in the iterative version of this guide: <a href="https://www.google.com/"style="color: #fa114f;" >{{page.title}}</a>.</p>
+
+      <p>If you are outside the Hack for LA community, please use this feedback form to provide suggestions for improvement or how the guide is useful for you.</p>
+
+    
+    </div>
+    
+    <div class="card-primary page-card--guide page-card--share">
+      
+      <h1>Share this Guide</h1>
+      
+      <!-- Add font awesome icons -->
+      
+      <div class="fa-icons">
+        
+        <a target="_blank" href="#" class="fa fa-instagram"></a>
+        
+        <a target="_blank" href="https://twitter.com/intent/tweet" class="fa fa-twitter"></a>
+        
+        <a target="_blank" href="https://www.facebook.com/sharer.php" class="fa fa-facebook"></a>
+        
+        <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/&url=http%3A%2F%2F127.0.0.1%3A4000%2Fguide-pages%2Fhow-to-set-reminders-in-slack%23how-to-set-up-reminders-" class="fa fa-linkedin"></a>
+        
+        <a target="_blank" href="#" media="print" class="fa fa-print"></a>
+      
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<!-- Return to Top -->
+<div class="top-scroll">
+  <button onclick="topFunction()" id="return-to-top" class="icon-chevron-up"></button>
+</div>  
+
+
+
+  <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON FOR RETURN TO TOP BUTTON -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  
+  <!-- Include javaScript -->
+  <script src="{{ '/assets/js/guidepages.js' | absolute_url }}"></script>  
+  

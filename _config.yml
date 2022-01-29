@@ -1,0 +1,10 @@
+title: Hack for LA Guide Pages Prototype
+description: | 
+  
+safe: true
+# collections_dir: collections
+collections:
+    guide-pages:
+      output: true
+      permalink: /:collection/:title
+

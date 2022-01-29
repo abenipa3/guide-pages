@@ -1,0 +1,90 @@
+---
+layout: default
+---
+
+<body>
+
+<div class="sticky-nav-container">
+  <a class=anchor></a>
+  <nav id="sticky-nav" class="sticky-nav">
+    {% include toc.html html=content %}
+  </nav>
+</div>
+
+<div class="page-content-container">
+  <div class="content-container">   
+    <div class="page-card-lg-overview">
+      <!-- This page card contains the guide's overview and direct links -->
+      <h1 class="guide-title">{{ page.title }}</h1>
+      {{ page.overview | markdownify }}
+
+      <div class="guide-links">
+        {% if page.sections %}
+        <h2>In This Guide</h2>
+        <ul>
+        {% for section in page.sections %}
+          <li><a href="{{ section.href }}"> {{ section.title }} </a><br>
+          {% if section.subsection[0] %}
+            <ul><br>
+            {% for subsection in section.subsection %}
+              <li><a href="{{ subsection.href }}">{{ subsection.title }}</a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="page-card-lg">
+    <!-- This page card contains the guide's content -->
+    {{content}}
+    <!-- {% for file in page.images %}
+    {% if file.extname == ".png" -%}
+    * [{{ file.path }}]
+    {% endif %}
+    {% endfor %} -->
+    </div>
+  </div>
+
+
+
+  <!-- <div class="sticky-nav-container">
+  <a class=anchor></a>
+  {% if page.sections %}
+  <nav id="sticky-nav" class="sticky-nav">
+      <ul>
+        {% for section in page.sections %}
+        <li><a href="{{ section.href }}"> {{ section.title }} </a><br>
+          {% if section.subsection[0] %}
+          <ul><br>
+            {% for subsection in section.subsection %}
+            <li><a href="{{ subsection.href }}">{{ subsection.title }}</a></li>
+              {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </nav>  -->
+  <!-- <div class="sticky-nav-spacer-div"></div> -->
+<!-- </div> -->
+
+</body>
+
+<!-- Return to Top -->
+<div class="top-scroll">
+  <button onclick="topFunction()" id="return-to-top" class="icon-chevron-up"></button>
+</div>  
+
+
+
+  <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON FOR RETURN TO TOP BUTTON -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  
+  <!-- Include javaScript -->
+  <script src="{{ '/assets/js/guidepages.js' | absolute_url }}"></script>  
+  
