@@ -62,16 +62,17 @@ body {
 	grid-template-columns: auto;
 	grid-template-rows: auto;
 	grid-template-areas:
-		"content nav"
-		"content nav"
-		"content nav";
+		"content1 nav1"
+		"content2 nav2"
+		"content3 nav3"
+		"content4 nav4";
 	justify-content: start;
 	scroll-behavior: smooth;
 	align-items: start;
 }
 
-.card-primary.page-card--about.page-card--overview {
-	grid-area: content;
+.card-primary.page-card--guide.page-card--overview {
+	grid-area: content1;
 }
 
 .page-card--overview {
@@ -82,11 +83,19 @@ body {
 	overflow: hidden;
 	border: 0 solid rgba(51, 51, 51, 0.06);
 	border-radius: 16px;
-	padding: 22px;
+	/* padding: 22px; */
 	height: fit-content;
-	max-width: 896px;
+	/* max-width: 896px; */
 	box-shadow: 0 0 8px 0 rgb(51 51 51 / 20%);
 	margin-left: 64px;
+}
+
+.page-card--content {
+	grid-area: content2;
+}
+
+.page-card--authors {
+	grid-area: content3;
 }
 
 .card-primary {
@@ -98,7 +107,6 @@ body {
 .sticky-nav-content-container {
 	display: flex;
 	margin-left: 100px;
-	grid-area: nav;
 	justify-self: start;
 	margin-top: 64px;
 }
@@ -113,13 +121,14 @@ body {
 
 /*Makes the sticky navigation stick */
 .stick-it {
-	display: flex;
-	z-index: 1;
-	right: 125px;
+	position: fixed;
+	top: 45px;
+	left: 1146px;
 }
 
 .sticky-nav {
-	position: fixed;
+	grid-area: nav2;
+	display: none;
 	background: #fff;
 	border: 0px solid rgba(51, 51, 51, 0.06);
 	border-radius: 16px;
@@ -172,11 +181,6 @@ body {
 	text-decoration: none;
 }
 
-.sticky-nav-spacer-div {
-	grid-area: nav;
-	width: 250px;
-}
-
 /* images in page card */
 img {
 	max-width: 100%;
@@ -212,6 +216,7 @@ img {
 /* Share This Guide */
 
 .page-card--share {
+	grid-area: content4;
 	margin-bottom: 48px;
 }
 
@@ -239,17 +244,29 @@ img {
 /* ==========================================================*/
 
 @media (min-width: 960px) {
+	.page-card--guide {
+		max-width: 896px;
+		padding: 60px;
+	}
+
+	.page-card--overview {
+		margin-top: 64px;
+	}
+
 	.page-content-container-grid {
+		margin-left: 100px;
+		grid-area: content;
+		justify-self: start;
 		grid-template-columns: 996px auto;
 		grid-template-rows: auto;
 		grid-gap: 48px 100px;
 	}
 
-	.sticky-nav-content-container {
+	/* .sticky-nav-content-container {
 		margin-left: 100px;
-		grid-area: nav;
+		grid-area: nav1;
 		justify-self: start;
-	}
+	} */
 
 	.sticky-nav {
 		display: block;
