@@ -59,16 +59,17 @@ body {
 
 .page-content-container-grid {
 	display: grid;
-	grid-template-columns: auto;
+	grid-template-columns: 20vw auto;
 	grid-template-rows: auto;
 	grid-template-areas:
-		"content1 nav1"
-		"content2 nav2"
-		"content3 nav3"
-		"content4 nav4";
+		"content1 nav"
+		"content2 ......."
+		"content3 ......."
+		"content4 .......";
 	justify-content: start;
 	scroll-behavior: smooth;
 	align-items: start;
+	grid-column-start: 1;
 }
 
 .card-primary.page-card--guide.page-card--overview {
@@ -94,8 +95,45 @@ body {
 	grid-area: content2;
 }
 
+/* Guide Authors */
+
 .page-card--authors {
 	grid-area: content3;
+}
+
+.authors-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	margin-bottom: 32px;
+	margin-top: 20px;
+}
+
+.authors-profile {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.authors-profile > a {
+	margin-right: 28px;
+}
+
+.authors-profile img {
+	border-radius: 50%;
+}
+
+.authors-contact {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.author-img-placeholder {
+	background-color: #efefef;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
 }
 
 .card-primary {
@@ -127,7 +165,8 @@ body {
 }
 
 .sticky-nav {
-	grid-area: nav2;
+	grid-area: nav;
+	grid-column-start: 2;
 	display: none;
 	background: #fff;
 	border: 0px solid rgba(51, 51, 51, 0.06);
@@ -255,7 +294,6 @@ img {
 
 	.page-content-container-grid {
 		margin-left: 100px;
-		grid-area: content;
 		justify-self: start;
 		grid-template-columns: 996px auto;
 		grid-template-rows: auto;

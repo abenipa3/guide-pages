@@ -3,51 +3,65 @@ layout: guide-pages
 title: How to Set Reminders in Slack
 provider-link: "/how-to-set-reminders-in-slack"
 overview: "Slack is a communication and collaboration platform that organizes conversations into topics, groups or private messages.  Each topic or group is called a Channel.  Hack for LA uses slack to allow teams to connect, discuss and work on projects collectively.  There are channels set up for both specific projects, and specific functional roles."
-sections:
-  - title: "What is Slack?"
-    href: "#what-is-slack"
-  - title: "When to use Reminders"
-    href: "#when-to-use-reminders"
-    subsection:
-      - title: "Who uses reminders"
-        href: "#who-uses-reminders"
-      - title: "Type of Reminders"
-        href: "#type-of-reminders"
-  - title: "How to Set Up Reminders?"
-    href: "#how-to-set-up-reminders-"
-    subsection:
-      - title: "Option 1: by Navigation"
-        href: "#option-1-by-navigation"
-      - title: "Option 2: by Direct Entry"
-        href: "#option-2-by-direct-entry"
-  - title: "When to use Reminders"
-    href: "#when-to-use-reminders"
-  - title: "Examples"
-    href: "#examples"
-  - title: "Guide Authors"
-    href: "#guide-authors"
+# sections:
+#   - title: "What is Slack?"
+#     href: "#what-is-slack"
+#   - title: "When to use Reminders"
+#     href: "#when-to-use-reminders"
+#     subsection:
+#       - title: "Who uses reminders"
+#         href: "#who-uses-reminders"
+#       - title: "Type of Reminders"
+#         href: "#type-of-reminders"
+#   - title: "How to Set Up Reminders?"
+#     href: "#how-to-set-up-reminders-"
+#     subsection:
+#       - title: "Option 1: by Navigation"
+#         href: "#option-1-by-navigation"
+#       - title: "Option 2: by Direct Entry"
+#         href: "#option-2-by-direct-entry"
+#   - title: "When to use Reminders"
+#     href: "#when-to-use-reminders"
+#   - title: "Examples"
+#     href: "#examples"
+#   - title: "Guide Authors"
+#     href: "#guide-authors"
 guide-author:
   - name: "Maria Studnicka"
-    linked-in: "https://www.linkedin.com/"
-    github: "https://github.com/"
+    links:
+      linked-in: "https://www.linkedin.com/in/maria-studnicka/"
+      github: "https://github.com/mariastudnicka"
+    picture: https://avatars.githubusercontent.com/mariastudnicka
   - name: "Katie Jensen" 
-    linked-in: "https://www.linkedin.com/"
-    github: "https://github.com/"
+    links:
+      linked-in: "https://www.linkedin.com/in/katie-jensen/"
+      github:
+    picture: https://media-exp1.licdn.com/dms/image/C4E03AQFxH7i2p-BbAQ/profile-displayphoto-shrink_400_400/0/1623178954400?e=1650499200&v=beta&t=7JZ76Ux55xt-UhcvTWODpcMDYcP1v9nHa6Pymi9Hae4
   - name: "Saasha Gilkes"
-    linked-in: "https://www.linkedin.com/"
-    github: "https://github.com/"
-  - name: "Oliva Chiong"
-    linked-in: "https://www.linkedin.com/"
-    github: "https://github.com/"
+    links:
+      linked-in: "https://www.linkedin.com/in/saashagilkes/"
+      github: "https://github.com/SaashaG"
+    picture: https://avatars.githubusercontent.com/SaashaG
+  - name: "Olivia Chiong"
+    links:
+      linked-in: "https://www.linkedin.com/in/chiongolivia/"
+      github: "https://github.com/Olivia-Chiong"
+    picture: https://avatars.githubusercontent.com/Olivia-Chiong
   - name: "Alyssa Benipayo"
-    linked-in: "https://www.linkedin.com/"
-    github: "https://github.com/"
+    links:
+      linked-in: "https://www.linkedin.com/in/alyssabenipayo/"
+      github: "https://github.com/alyssabenipayo"
+    picture: https://avatars.githubusercontent.com/alyssabenipayo    
   - name: "Bukola Ogunleye"
-    linked-in: "https://www.linkedin.com/"
-    github: "https://github.com/"
+    links:
+      linked-in: "https://www.linkedin.com/in/bukola-ogunleye-j/"
+      github: "https://github.com/SheIsBukki"
+    picture: https://avatars.githubusercontent.com/SheIsBukki   
   - name: "Bonnie Wolfe" 
-    linked-in: "https://www.linkedin.com/"
-    github: "https://github.com/"
+    links:
+      linked-in: "https://www.linkedin.com/in/bonnieawolfe/"
+      github: "https://github.com/ExperimentsInHonesty"
+    picture: https://avatars.githubusercontent.com/ExperimentsInHonesty   
 ---
 
 # **What** is Slack?
