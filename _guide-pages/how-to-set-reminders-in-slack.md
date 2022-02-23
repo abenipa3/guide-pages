@@ -35,7 +35,7 @@ guide-author:
   - name: "Katie Jensen" 
     links:
       linked-in: "https://www.linkedin.com/in/katie-jensen/"
-      github:
+      github: 
     picture: https://media-exp1.licdn.com/dms/image/C4E03AQFxH7i2p-BbAQ/profile-displayphoto-shrink_400_400/0/1623178954400?e=1650499200&v=beta&t=7JZ76Ux55xt-UhcvTWODpcMDYcP1v9nHa6Pymi9Hae4
   - name: "Saasha Gilkes"
     links:

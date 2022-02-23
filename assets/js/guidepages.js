@@ -23,6 +23,17 @@ for (let i = 0; i < navLinks.length; i++) {
     });
 }
 
+/*************************************************/
+/**** Script 2: Makes the side stick and scrollable *****/
+/*************************************************/
+
+
+const stickyDiv = document.querySelector(".stick-it");
+window.addEventListener("scroll", function() {
+  stickyDiv.style.top = window.pageYOffset + "px";
+});
+
+
 /***************************************************/
 /**** Script 2: Highlight links when scrolling *****/
 /***************************************************/
@@ -36,6 +47,7 @@ for (let i = 0; i < quickLinks.length; i++) {
     qlArray.push(quickLinks[i].href.substring(quickLinks[i].href.indexOf('#') + 1));
 }
 document.addEventListener('scroll', scrollHandler, true);
+
 // alignment of page card with its corresponding link on the sticky navigation 
 function scrollHandler() {
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
@@ -43,7 +55,7 @@ function scrollHandler() {
     for (let i = 0; i < qlArray.length - 1; i++) {
         const top = document.getElementById(qlArray[i]).getBoundingClientRect().top
         const bottom = document.getElementById(qlArray[i + 1]).getBoundingClientRect().top
-        if (top > 0 && top < vh * 0.8 || bottom >= vh * 0.8) {
+        if (top > 0 && top < vh * 0.8 || bottom >= vh * 0.7) {
             if (currentActive != undefined) {
                 currentActive.classList.remove('is-active');
             }
@@ -82,3 +94,8 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+/***************************************************/
+/**** Script 3: Make the Sticky Navigation Scrollable *****/
+/***************************************************/
+
