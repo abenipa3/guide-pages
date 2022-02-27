@@ -3,15 +3,6 @@
 
 {% include head.html %}
 {% include header.html %}
-{% if page.layout == 'guide-pages' %}
-<div class="header-container">
-  <img class="page-hero" src="/assets/images/guide-page-hero.svg">
-  <div class="hero-left">
-    <h3 class="hero-heading">Guide</h3>
-    <h1 class="hero-title">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
-  </div>
-</div>
-{% endif %}
 
 <body>
 

@@ -2,7 +2,19 @@
 layout: default
 ---
 
-<body>
+<!-- Header Banner -->
+
+{% if page.layout == 'guide-pages' %}
+<div class="header-container">
+  <img class="page-hero" src="/assets/images/guide-page-hero.svg">
+  <div class="hero-left">
+    <h3 class="hero-heading">Guide</h3>
+    <h1 class="hero-title">{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+  </div>
+</div>
+{% endif %}
+
+<!-- Content -->
   
   <div class="page-container">
 
@@ -115,7 +127,7 @@ layout: default
   
   </div>  
 
-</body>
+
 
 <!-- Return to Top -->
 <div class="top-scroll">
@@ -127,6 +139,6 @@ layout: default
   <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON FOR RETURN TO TOP BUTTON -->
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   
-  <!-- Include javaScript -->
+  <!-- Include JavaScript -->
   <script src="{{ "/assets/js/guidepages.js" | absolute_url }}"></script>  
   
