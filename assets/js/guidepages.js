@@ -27,8 +27,7 @@ for (let i = 0; i < navLinks.length; i++) {
 /**** Script 2: Makes the side stick and scrollable *****/
 /*************************************************/
 
-
-const stickyDiv = document.querySelector(".stick-it");
+const stickyDiv = document.querySelector(".sticky-nav-container");
 window.addEventListener("scroll", function() {
   stickyDiv.style.top = window.pageYOffset + "px";
 });
