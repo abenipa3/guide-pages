@@ -24,5 +24,4 @@ More details can also be found in the following issues:
 
 # Quick Preview
 
-![guidepages-071221](https://user-images.githubusercontent.com/38295612/125382019-c5779b80-e349-11eb-98c7-76f4b7787ec0.gif)
-
+![image](https://user-images.githubusercontent.com/38295612/160188334-1d2aa264-97b2-465b-86b1-13cb9e6858ad.png)
