@@ -22,6 +22,6 @@ More details can also be found in the following issues:
 - [Work flow for guides to appear on the website](https://github.com/hackforla/website/issues/1630)
 
 
-# Quick Preview
-
+# Preview
+Desktop Only -
 ![image](https://user-images.githubusercontent.com/38295612/160188391-1cc7766a-16b0-4946-a868-ea48fdc9cd1c.png)
