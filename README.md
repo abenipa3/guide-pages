@@ -1,27 +1,27 @@
 # Hack for LA Website's Guide Pages Prototype
 
-Prototype Status: In Progress. [[Site Preview - Updated as of 2/13/22]](https://alyssabenipayo.github.io/guide-pages/)
+## Project Overview
+Guide Pages are "How-To" documentations on various technologies that will help users tackle their tasks used in Development, Design, Project Management, or Professional Development. It is also a section where Hack for LA consistently maintain and post new guides when the team discover team technologies that would be used to the civic tech software community. There are currently [several guide pages](https://www.hackforla.org/toolkit/) available on Hack for LA's live website and Google Docs (view only).
 
-Current Objectives:
-- Prototype currently in-review.
+However, there are visual errors on the Guide Pages, and publishing new guides is not user-friendly for maintainers without development background. With the help of Hack for LA's Guides and Website Teams, I took the initiative to redesign and develop the Guide Pages from scratch with Jekyll and JavaScript to make it visually impactful and feasible for maintenance and updates.
 
-Next Objectives:
-- Implement prototype into HfLA's repository.
-- Finalize documentation on Guide Page Markdown process.
+‍Role: Frontend Developer and UI Designer
 
-Link to wireframes:
-- [Desktop](https://www.figma.com/file/zp13t7IGvxubXRIGiLjClt/Hack-for-LA-Guide-Pages?node-id=0%3A19)
-- [Mobile](https://www.figma.com/file/zp13t7IGvxubXRIGiLjClt/Hack-for-LA-Guide-Pages?node-id=0%3A206)
-- [All Wireframes](https://www.figma.com/file/zp13t7IGvxubXRIGiLjClt/Hack-for-LA-Guide-Pages?node-id=0%3A2763)
+Tools: Jekyll (Liquid, HTML), CSS, JavaScript, Google Apps Script (More details here), Figma
 
-More details can also be found in the following issues:
-- [Research Formatted Guide Pages Parse with Markdown](https://github.com/hackforla/website/issues/1085)
-- [Design HfLA Guide Pages](https://github.com/hackforla/website/issues/1525)
-- [Create mobile version of the Guide Pages and ensure responsiveness](https://github.com/hackforla/website/issues/1515)
-- [Test of Markdown converter](https://github.com/hackforla/guides/issues/10)
-- [Work flow for guides to appear on the website](https://github.com/hackforla/website/issues/1630)
+## Installation
+1. Please clone this repository.
+`git clone https://github.com/alyssabenipayo/guide-pages.git`
 
+2. Run `jekyll serve` to start "http://127.0.0.1:4000"
 
-# Preview
-Desktop Only -
-![image](https://user-images.githubusercontent.com/38295612/160188391-1cc7766a-16b0-4946-a868-ea48fdc9cd1c.png)
+## Future Developments and Improvements
+
+### Frontend
+- Create mobile version of Guide Pages and ensure responsiveness wish SCSS/Sass.
+- Provide users the option to print or share the guide on social media. 
+- Show profile picture images of the Guide Authors next to their names.
+
+## Backend
+- Develop a Google Apps Script from scratch that will convert all Google Docs into Markdown files with special features tailored to the organization's preferences including
+  - [More Details Here](https://github.com/hackforla/website/issues/2978#issuecomment-1066182909)

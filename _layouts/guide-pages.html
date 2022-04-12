@@ -15,7 +15,6 @@ layout: default
 {% endif %}
 
 <!-- Content -->
-  
   <div class="page-container">
 
     <div class="row">
@@ -24,20 +23,25 @@ layout: default
         <div class="stick-it">
           <a class=anchor></a>
           <nav class="sticky-nav">
+            <!-- <ul>
+              <li>What's in the Guide?</li>
+            </ul> -->
             {% include toc.html html=content %}
+            <!-- <ul>
+              <li>Guide Authors</li>
+            </ul> -->
           </div>
         </nav>
   
       </div>
       
       <!-- <div class="sticky-nav-spacer-div"> </div>  -->
-      
-      <div class="page-content-container-grid">
-  
-        <div class="main">
+      <div class="main">      
+        <div class="page-content-container-grid">  
           <div class="card-primary page-card--guide page-card--overview">
-            <!-- This page card contains the guide"s overview and direct links -->
-            <h1 class="guide-title">{{ page.title }}</h1>
+          <!-- This page card contains the guide"s overview and direct links -->
+          <!-- <h1 class="guide-title">{{ page.title }}</h1> -->
+          <h1>What's in the Guide?</h1>
             {{ page.overview | markdownify }}
             <div class="guide-links">
               {% if page.sections %}
@@ -74,11 +78,6 @@ layout: default
             <div class="authors-container">
               {% for item in page.guide-author %}
               <div class="authors-profile">
-                {% if item.links.github %}
-                <a href="{{ item.links.github }}" target="_blank" title="{{ item.name }}'s GitHub Profile"><img class="author-img" src="{{ item.picture }}" width="100" height="100"/></a>
-                {% else %}
-                <a href="{{ item.links.linked-in }}" target="_blank" title="{{ item.name }}'s LinkedIn Profile"><div class="author-img-placeholder"></div></a>
-                {% endif %}
                 <p>{{ item.name }}</p>
               </div>
               <div class="authors-contact">
@@ -87,7 +86,10 @@ layout: default
                 <a href="{{ item.links.github }}" target="_blank" title="GitHub Profile" class="fa fa-github fa-xl"></a>
                 {% elsif item.links.linked-in %}
                 <a href="{{ item.links.linked-in }}" target="_blank" title="Linkedin Profile" class="fa fa-linkedin fa-xl"></a>
+                <div class="no-github"></div>
+                <div></div>
                 {% else %}
+                <div class="no-linked-in"></div>
                 <a href="{{ item.links.github }}" target="_blank" title="GitHub Profile" class="fa fa-github fa-xl"></a>
                 {% endif %}
               </div>
@@ -101,32 +103,12 @@ layout: default
   
           </div>
   
-          <div class="card-primary page-card--guide page-card--share"> 
-            
-            <h1>Share this Guide</h1>
-  
-            <div class="fa-icons"> 
-  
-              <a target="_blank" href="#" class="fa fa-instagram"></a>
-          
-              <a target="_blank" href="https://twitter.com/intent/tweet" class="fa fa-twitter"></a>
-              
-              <a target="_blank" href="https://www.facebook.com/sharer.php" class="fa fa-facebook"></a>
-              
-              <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/&url=http%3A%2F%2F127.0.0.1%3A4000%2Fguide-pages%2Fhow-to-set-reminders-in-slack%23how-to-set-up-reminders-" class="fa fa-linkedin"></a>
-              
-              <a target="_blank" onclick="window.print();return false;" media="print" class="fa fa-print"></a>
-  
-            </div>
-        
-          </div>
-  
         </div>
 
     </div>
   
   </div>  
-
+  
 
 
 <!-- Return to Top -->
@@ -140,5 +122,5 @@ layout: default
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   
   <!-- Include JavaScript -->
-  <script src="{{ "/assets/js/guidepages.js" | absolute_url }}"></script>  
+  <script src="{{ '/assets/js/guidepages.js' | absolute_url }}"></script>  
   
