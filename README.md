@@ -7,6 +7,7 @@ However, there are visual errors on the Guide Pages, and publishing new guides i
 
 ## Previews
 [Live on GitHub Pages](https://alyssabenipayo.github.io/guide-pages/)
+
 [Wireframes via Figma](https://www.figma.com/file/n0YHiNO4MDA9SrMJPPIjoW/Hack-for-LA---Guide-Pages?node-id=118%3A3292)
 
 ## Role(s)
