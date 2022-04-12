@@ -9,11 +9,11 @@ However, there are visual errors on the Guide Pages, and publishing new guides i
 [Live on GitHub Pages](https://alyssabenipayo.github.io/guide-pages/)
 [Wireframes via Figma](https://www.figma.com/file/n0YHiNO4MDA9SrMJPPIjoW/Hack-for-LA---Guide-Pages?node-id=118%3A3292)
 
-‍## Roles
+## Role(s)
 Frontend Developer and UI Designer
 
 ## Tools
-Jekyll (Liquid, HTML), CSS, JavaScript, Google Apps Script (More details here), Figma
+Jekyll (Liquid, HTML), CSS, JavaScript, Google Apps Script, Figma
 
 ## Installation
 1. Please clone this repository.
@@ -27,9 +27,11 @@ Jekyll (Liquid, HTML), CSS, JavaScript, Google Apps Script (More details here), 
 - Create mobile version of Guide Pages and ensure responsiveness wish SCSS/Sass.
 - Provide users the option to print or share the guide on social media. 
 - Show profile picture images of the Guide Authors next to their names.
+- Adjust sticky navigation bar to ensure it sticks to the page properly using JavaScript.
 
 ## Backend
 - Develop a Google Apps Script from scratch that will convert all Google Docs into Markdown files efficiently and accurately with special features tailored to the organization's preferences to ease maintenance. 
+  - This will reduce manual edits.
 
 ## Image
-![screencapture-127-0-0-1-4000-guide-pages-how-to-set-reminders-in-slack-2022-04-12-03_53_26](https://user-images.githubusercontent.com/38295612/162945031-09b2dde9-477d-4eb7-a166-ea8bab88728f.png)
+![screencapture-127-0-0-1-4000-guide-pages-how-to-set-reminders-in-slack-2022-04-12-03_53_26](./assets/images/screencapture-127-0-0-1-4000-guide-pages-how-to-set-reminders-in-slack-2022-04-12-03_53_26.png "screen capture")
