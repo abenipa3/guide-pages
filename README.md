@@ -29,6 +29,7 @@ Jekyll (Liquid, HTML), CSS, JavaScript, Google Apps Script, Figma
 - Provide users the option to print or share the guide on social media. 
 - Show profile picture images of the Guide Authors next to their names.
 - Adjust sticky navigation bar to ensure it sticks to the page properly using JavaScript.
+- Apply changes to side-nav using Liquid to remove emojis/images next to section/subsection titles.
 
 ## Backend
 - Develop a Google Apps Script from scratch that will convert all Google Docs into Markdown files efficiently and accurately with special features tailored to the organization's preferences to ease maintenance. 
