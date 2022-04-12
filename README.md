@@ -23,5 +23,4 @@ Tools: Jekyll (Liquid, HTML), CSS, JavaScript, Google Apps Script (More details 
 - Show profile picture images of the Guide Authors next to their names.
 
 ## Backend
-- Develop a Google Apps Script from scratch that will convert all Google Docs into Markdown files with special features tailored to the organization's preferences including
-  - [More Details Here](https://github.com/hackforla/website/issues/2978#issuecomment-1066182909)
+- Develop a Google Apps Script from scratch that will convert all Google Docs into Markdown files efficiently and accurately with special features tailored to the organization's preferences to ease maintenance. 
