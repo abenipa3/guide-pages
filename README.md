@@ -7,8 +7,10 @@ However, there are visual errors on the Guide Pages, and publishing new guides i
 
 ## Project Progress
 Project Status: Completed. 
-[Live](https://www.hackforla.org/guide-pages/how-to-set-reminders-in-slack.html) 
-[Pull Request](https://github.com/hackforla/website/pull/3548)
+
+[[Visit Live Site]](https://www.hackforla.org/guide-pages/how-to-set-reminders-in-slack.html) 
+
+[[View (Merged) Pull Request]](https://github.com/hackforla/website/pull/3548)
 
 ## Previews
 [Live on GitHub Pages](https://alyssabenipayo.github.io/guide-pages/)
