@@ -5,6 +5,11 @@ Guide Pages are "How-To" documentations on various technologies that will help u
 
 However, there are visual errors on the Guide Pages, and publishing new guides is not user-friendly for maintainers without development background. With the help of Hack for LA's Guides and Website Teams, I took the initiative to redesign and develop the Guide Pages from scratch with Jekyll and JavaScript to make it visually impactful and feasible for maintenance and updates.
 
+## Project Progress
+Project Status: Completed. 
+[Live](https://www.hackforla.org/guide-pages/how-to-set-reminders-in-slack.html) 
+[Pull Request](https://github.com/hackforla/website/pull/3548)
+
 ## Previews
 [Live on GitHub Pages](https://alyssabenipayo.github.io/guide-pages/)
 
