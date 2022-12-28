@@ -13,9 +13,9 @@ Project Status: Completed.
 [[View (Merged) Pull Request]](https://github.com/hackforla/website/pull/3548)
 
 ## Previews
-[View Prototype](https://alyssabenipayo.github.io/guide-pages/)
+[[View Prototype]](https://alyssabenipayo.github.io/guide-pages/)
 
-[Wireframes via Figma](https://www.figma.com/file/n0YHiNO4MDA9SrMJPPIjoW/Hack-for-LA---Guide-Pages?node-id=118%3A3292)
+[[Wireframes via Figma]](https://www.figma.com/file/n0YHiNO4MDA9SrMJPPIjoW/Hack-for-LA---Guide-Pages?node-id=118%3A3292)
 
 ## Role(s)
 Frontend Developer and UI Designer
