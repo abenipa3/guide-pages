@@ -10,7 +10,7 @@ Project Status: Completed.
 
 [[Visit Live Site]](https://www.hackforla.org/guide-pages/how-to-set-reminders-in-slack.html) 
 
-[[View (Merged) Pull Request]](https://github.com/hackforla/website/pull/3548)
+[[View Pull Request]](https://github.com/hackforla/website/pull/3548) - Status: Merged
 
 ## Previews
 [[View Prototype]](https://alyssabenipayo.github.io/guide-pages/)
